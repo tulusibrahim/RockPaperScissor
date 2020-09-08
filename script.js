@@ -48,6 +48,9 @@ function yuk() {
 
   if (scorebot >= 10 || scoreyou >= 10) {
     document.querySelector("#button").disabled = true;
+    setTimeout(() => {
+      location.reload();
+    }, 7000);
     if (scorebot >= 10) {
       judgement.innerHTML = "gameover!!! pemenangnya bott nub bgst";
     }
