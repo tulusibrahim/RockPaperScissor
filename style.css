@@ -40,7 +40,9 @@ button {
 #batu:hover {
   transform: translateY(-10px);
 }
-
+#body {
+  transition: 0.25s;
+}
 body {
   font-size: 3em;
   display: flex;

@@ -59,7 +59,7 @@ function yuk() {
 
 function darkmode() {
   var button = document.getElementById("button");
-  var body = document.getElementById("content");
+  var body = document.getElementById("body");
   if (body.style.backgroundColor == "white") {
     body.style.backgroundColor = "black";
     body.style.color = "white";
