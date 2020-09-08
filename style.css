@@ -1,0 +1,65 @@
+#judgement {
+  font-size: 0.6em;
+}
+
+#score {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  height: 50px;
+}
+
+#dark {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+  cursor: pointer;
+}
+
+button {
+  width: 180px;
+  height: 70px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 40;
+  background-color: white;
+  color: black;
+}
+
+#kertas,
+#gunting,
+#batu {
+  transition: 0.7s;
+}
+
+#kertas:hover,
+#gunting:hover,
+#batu:hover {
+  transform: translateY(-10px);
+}
+
+body {
+  font-size: 3em;
+  display: flex;
+  background-color: black;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#content {
+  display: flex;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex: 1 1 800px;
+  flex-direction: column;
+  transition: 0.25s;
+}
