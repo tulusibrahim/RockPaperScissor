@@ -62,7 +62,7 @@ function yuk() {
     document.querySelector("#button").disabled = true;
     setTimeout(() => {
       location.reload();
-    }, 7000);
+    }, 10000);
     if (scorebot >= 10) {
       judgement.innerHTML = "It's done. I know Youre Doing Youre Best";
     }
