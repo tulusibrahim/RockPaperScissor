@@ -1,64 +1,45 @@
 <html>
-  <head>
-    <script
-      src="https://kit.fontawesome.com/6c74545ce9.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body id="body">
-    <div id="content">
-      <h2>rock paper scissors!</h2>
-      <p>u have no power here. just see the result</p>
-      <br />
-      <div>
-        <span
-          ><i
-            class="far fa-hand-paper"
-            style="font-size: 80px; margin: 20px; cursor: pointer"
-            onclick="kertas()"
-            id="kertas"
-          ></i
-        ></span>
-        <span
-          ><i
-            class="far fa-hand-rock"
-            style="font-size: 80px; margin: 20px; cursor: pointer"
-            onclick="batu()"
-            id="batu"
-          ></i
-        ></span>
-        <span
-          ><i
-            class="far fa-hand-scissors"
-            style="font-size: 80px; margin: 20px; cursor: pointer"
-            onclick="gunting()"
-            id="gunting"
-          ></i></span
-        ><br /><br />
+<head>
+  <script src="https://kit.fontawesome.com/6c74545ce9.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body id="body">
+  <div id="content">
+    <h2>Rock Paper Scissors!</h2>
+    <p>Choose ur fighter and see the result</p>
+    <br />
+    <div>
+      <span><i class="far fa-hand-paper" style="font-size: 80px; margin: 20px; cursor: pointer" onclick="kertas()"
+          id="kertas"></i></span>
+      <span><i class="far fa-hand-rock" style="font-size: 80px; margin: 20px; cursor: pointer" onclick="batu()"
+          id="batu"></i></span>
+      <span><i class="far fa-hand-scissors" style="font-size: 80px; margin: 20px; cursor: pointer" onclick="gunting()"
+          id="gunting"></i></span><br /><br />
+    </div>
+    <span><button onclick="yuk()" id="button">Let's see</button><br /></span>
+    <h3>
+      <div id="jawaban">
+        <span id="you"></span>
+        <span> vs </span>
+        <span id="bot"></span>
       </div>
-      <span><button onclick="yuk()" id="button">lets see</button><br /></span>
-      <h3>
-        <div id="jawaban">
-          <span id="you"></span>
-          <span> vs </span>
-          <span id="bot"></span>
-        </div>
-        <p id="judgement"></p>
-      </h3>
-      <div id="score">
-        <div>
-          <span>you</span>
-          <span id="scoreyou">0</span>
-        </div>
-        <div>
-          <span id="scorebot">0</span>
-          <span>computer</span>
-        </div>
+      <p id="judgement"></p>
+    </h3>
+    <div id="score">
+      <div>
+        <span>You</span>
+        <span id="scoreyou">0</span>
+      </div>
+      <div>
+        <span id="scorebot">0</span>
+        <span>Computer</span>
       </div>
     </div>
-    <div id="dark"><i class="fas fa-adjust" onclick="darkmode()"></i></div>
-  </body>
+  </div>
+  <div id="dark"><i class="fas fa-adjust" onclick="darkmode()"></i></div>
+</body>
+
 </html>

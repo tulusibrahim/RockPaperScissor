@@ -26,30 +26,30 @@ function yuk() {
 
   let jawaban =
     you == "gunting" && outputbot == "gunting"
-      ? "seri"
+      ? "Seri"
       : you == "gunting" && outputbot == "batu"
-        ? "kalah"
+        ? "Kalah"
         : you == "gunting" && outputbot == "kertas"
-          ? "menang"
+          ? "Menang"
           : you == "batu" && outputbot == "gunting"
-            ? "menang"
+            ? "Menang"
             : you == "batu" && outputbot == "batu"
-              ? "seri"
+              ? "Seri"
               : you == "batu" && outputbot == "kertas"
-                ? "kalah"
+                ? "Kalah"
                 : you == "kertas" && outputbot == "gunting"
-                  ? "kalah"
+                  ? "Kalah"
                   : you == "kertas" && outputbot == "batu"
-                    ? "menang"
+                    ? "Menang"
                     : you == "kertas" && outputbot == "kertas"
-                      ? "seri"
+                      ? "Seri"
                       : "";
   judgement.innerHTML = jawaban;
 
-  if (jawaban == "menang") {
+  if (jawaban == "Menang") {
     scoreyou += 1;
     document.getElementById("scoreyou").innerHTML = scoreyou;
-  } else if (jawaban == "kalah") {
+  } else if (jawaban == "Kalah") {
     scorebot += 1;
     document.getElementById("scorebot").innerHTML = scorebot;
   }
@@ -64,10 +64,10 @@ function yuk() {
       location.reload();
     }, 7000);
     if (scorebot >= 10) {
-      judgement.innerHTML = "gameover!!! pemenangnya bott nub bgst";
+      judgement.innerHTML = "It's done. I know Youre Doing Youre Best";
     }
     if (scoreyou >= 10) {
-      judgement.innerHTML = "gameover!!! pemenangnya eluu hoki bgst";
+      judgement.innerHTML = "Very Well. You Wanna Rematch?";
     }
   }
 }
