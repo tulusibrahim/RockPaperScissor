@@ -64,5 +64,5 @@ body {
   flex-direction: column;
   transition: 0.25s;
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
 }
