@@ -54,7 +54,7 @@ function yuk() {
     document.getElementById("scorebot").innerHTML = scorebot;
   }
 
-  if (scorebot == 9 && scoreyou <= 6) {
+  if (scorebot == 9 && scoreyou < 4) {
     alert("seems like somebody gonna lose this time");
   }
 

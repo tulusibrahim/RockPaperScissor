@@ -8,9 +8,10 @@
 
 <body id="body">
   <div id="content">
-    <h2>Rock Paper Scissors!</h2>
-    <p>Choose ur fighter and see the result</p>
-    <br />
+    <div>
+      <h2>Rock Paper Scissors!</h2>
+      <p>Choose ur fighter and see the result</p>
+    </div>
     <div>
       <span><i class="far fa-hand-paper" style="font-size: 80px; margin: 20px; cursor: pointer" onclick="kertas()"
           id="kertas"></i></span>
@@ -18,15 +19,17 @@
           id="batu"></i></span>
       <span><i class="far fa-hand-scissors" style="font-size: 80px; margin: 20px; cursor: pointer" onclick="gunting()"
           id="gunting"></i></span><br /><br />
+      <span><button onclick="yuk()" id="button">Let's see</button><br /></span>
     </div>
-    <span><button onclick="yuk()" id="button">Let's see</button><br /></span>
     <h3>
       <div id="jawaban">
         <span id="you"></span>
         <span> vs </span>
         <span id="bot"></span>
       </div>
-      <p id="judgement"></p>
+      <div>
+        <p id="judgement"></p>
+      </div>
     </h3>
     <div id="score">
       <div>

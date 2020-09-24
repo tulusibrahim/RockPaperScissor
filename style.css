@@ -6,7 +6,6 @@
   display: flex;
   justify-content: space-between;
   width: 80%;
-  margin: auto;
   height: 50px;
 }
 
@@ -60,9 +59,10 @@ body {
 #content {
   display: flex;
   text-align: center;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  flex: 1 1 800px;
   flex-direction: column;
   transition: 0.25s;
+  width: 100vw;
+  height: 100vh;
 }
